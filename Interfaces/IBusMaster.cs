@@ -8,5 +8,10 @@ namespace LocalTranspotaion_API.Interfaces
     {
         public IEnumerable<LtBusMaster> GetBuses();
 
+        public IEnumerable<LtCountryMaster> GetAllContries();
+
+
+
+
     }
 }

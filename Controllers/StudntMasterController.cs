@@ -23,5 +23,12 @@ namespace LocalTranspotaion_API.Controllers
         {
             return _IStudentMaster.GetStudents();
         }
+
+        [HttpGet]
+        [Route("GetAllCities")]
+        public IEnumerable<LtStudentMaster> GetAllCities()
+        {
+            return _IStudentMaster.GetStudents();
+        }
     }
 }

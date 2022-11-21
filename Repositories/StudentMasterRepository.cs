@@ -12,6 +12,12 @@ namespace LocalTranspotaion_API.Repositories
         {
             _LocalTransportationContext = localTransportationContext;
         }
+
+        public IEnumerable<LtCityMaster> GetCities()
+        {
+            return _LocalTransportationContext.LtCityMasters.ToList();
+        }
+
         public IEnumerable<LtStudentMaster> GetStudents()
         {
             return _LocalTransportationContext.LtStudentMasters.ToList();

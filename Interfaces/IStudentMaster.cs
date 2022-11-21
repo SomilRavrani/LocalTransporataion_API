@@ -7,5 +7,7 @@ namespace LocalTranspotaion_API.Interfaces
     {
         public IEnumerable<LtStudentMaster> GetStudents();
 
+        public IEnumerable<LtCityMaster> GetCities();
+
     }
 }

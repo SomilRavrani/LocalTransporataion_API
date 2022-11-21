@@ -16,12 +16,21 @@ namespace LocalTranspotaion_API.Controllers
         public BusMasterController(IBusMaster IBusMaster)
         {
             _IBusMaster = IBusMaster;
-        } 
+        }
 
-        [HttpGet]
+        [HttpGet("GetAllBus")]
         public IEnumerable<LtBusMaster> GetBuses()
         {
             return _IBusMaster.GetBuses();
         }
+
+
+        [HttpGet("GetAllContries")]
+        public IEnumerable<LtCountryMaster> GetAllContries()
+        {
+            return _IBusMaster.GetAllContries();
+        }
+
+
     }
 }
